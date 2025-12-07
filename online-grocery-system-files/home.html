@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FreshCart Online Grocery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">🛒 FreshCart</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="user-greeting" id="userGreeting">Welcome!</span>
+                <a href="cart.html" class="cart-icon">
+                    🛒 <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <button class="btn btn-secondary" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Shop Fresh Groceries Online</h1>
+            <p>Get fresh groceries delivered to your doorstep</p>
+            <a href="products.html" class="btn btn-primary btn-large">Start Shopping</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="categories-section">
+            <h2>Shop by Category</h2>
+            <div class="category-grid" id="categoryGrid">
+                <!-- Categories will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="featuredProducts">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 FreshCart Online Grocery. All rights reserved.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
